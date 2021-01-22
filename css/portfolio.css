@@ -1,0 +1,218 @@
+header{height: auto;}
+.intro__portfolio{
+    height: 40vh;
+    box-shadow: 0 2px 10px #e4e4e4 inset ;
+    background: #e2e2e2 url(../img/portfoliobg.png) no-repeat right;
+}
+.intro__portfolio div{
+    height: 100%;
+    
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.navigation__portfolio{
+    background: #fff;
+}
+.intro__portfolio div div {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+#details div:last-child{
+    padding: 30px 0 ;
+}
+#details div ul{
+    display: inline;
+}
+#details div ul li:first-child{
+    border-left: 1px solid #ebebeb;
+    float: left;
+}
+#details div ul li:last-child{
+    float: left;
+}
+
+#details div ul li{
+    display: inline-block;
+    
+    border-right: 1px solid #ebebeb;
+}
+#details div ul li a{
+    display: inline-block;
+    padding: 25px 40px ;
+    color: #071f08;
+    font:600 .9em Tahoma;
+    text-transform: uppercase;
+    transition: background .2s linear .1s;
+}
+#details div ul li a:hover{
+    background: #ebebeb;
+}
+#details div ul li a i{
+    margin: 0 10px 0 10px ;
+    font-size: .7em;
+}
+.navigation__portfolio  div > a{
+    float: right;
+    padding: 25px 40px ;
+    border-right: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    color: #071f08;
+    font:600 .9em Tahoma;
+    text-transform: uppercase;
+    transition: background .2s linear .1s;
+}
+.navigation__portfolio  div > a:hover{
+    background: #ebebeb;
+}
+#details div article h3{
+    text-align: left;
+    font: 400 1.8em Roboto;
+    color: #000;
+    letter-spacing: 5px;
+}
+#details div article h4,#details div article time,#details div article .likes{
+    font: 700 .9em Roboto;
+    color: #777;
+    padding: 15px 0 30px 0;
+    margin: 0 0 30px 0;
+    border-bottom: 1px solid #ebebeb;
+    
+}
+#details div article time{margin: 0 70px 0 0;}
+#text{
+    width: 50%;
+   
+}
+#text p{
+    margin: 40px 0 ;
+    color: #777777;
+    font: 400 .9em Roboto;
+    line-height: 30px;
+    padding: 0 0 60px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+#text h5{
+    font: 700 1.1em Roboto;
+    color: #333;
+}
+.prof{
+    display: inline-block;
+    color: #777777;
+    font: 400 .9em Roboto;
+    margin: 23px 0 60px 0;
+}
+.share{
+   background: #707070;
+   padding: 15px 12px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font: .8em Tahoma;
+   color: #fff;
+   border-radius: 3px;
+  margin: 0 10px 0 0;
+   transition: all .5s ;
+}
+.share:hover{
+    background: #fff;
+    color:#707070 ;
+    box-shadow: 0 0 10px #707070;
+}
+.icons__share{
+    position: relative;
+    padding: 15px 20px;
+    border-radius: 3px;
+    background: #e1e1e1;
+    
+}
+.icons__share a{
+    margin: 0 25px 0 0 ;
+    transition: .4s;
+}
+.icons__share a:last-child{
+    margin: 0;
+}
+.icons__share span{
+    position: absolute;
+    top: 14px;
+    left:  -6px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #e1e1e1;
+    transform: rotate(-45deg);
+}
+.icons__share a:hover{
+    color: #fff;
+    text-shadow: 0 0 5px #707070;
+}
+.detail__gallery{
+    display: flex;
+}
+.photo{
+    width: 50%;
+    margin: 0 0 0 40px ;
+}
+
+
+.main__photo{
+    width: 100%;
+}
+.photo > div {
+    display: flex;
+    
+}
+.child__phito:last-child{
+    margin: 0 0 0 5px;
+}
+.child__phito:first-child{
+    margin: 0 5px 0 0 ;
+}
+.child__phito{
+    width: 25%;
+    min-height: 94px;
+    margin: 0 5px;
+    background: #000;
+}
+
+.child__phito img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .2s;
+    
+}
+.child__phito img:hover{
+    opacity: .6;
+}
+.works{
+    margin: 130px auto 0 auto;
+}
+.works h6{
+    font: 300 1.8em Roboto;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.works p{
+    width: 50%;
+    margin: 40px auto 50px auto;
+    line-height: 24px;
+    color: #777777;
+    font: 400 .9em Roboto;
+}
+.row img:nth-child(2){
+    padding: 0 10px;
+}
+.row img{
+    width: 33%;
+    height: 30vh;
+    object-fit: cover;
+}

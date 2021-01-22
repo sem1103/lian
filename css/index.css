@@ -1,0 +1,234 @@
+.txt__gray{
+    color: #777;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.navigation{
+    background: #fff;
+    box-shadow: 0 2px 10px #e4e4e4 ;
+    padding: 28px 0;
+    z-index: 6;
+}
+.line1{
+    display: inline-block;
+    opacity: 0;
+    width: 20px;
+    border: 0;
+    border-top: 1px solid #06060a;
+    margin: 0 19px 3px 0;
+    transition: opacity .2s linear;
+}
+header{
+    position: relative;
+    height: 100vh;
+    background: #fafafa;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav ul li{
+    display: inline-block;
+    margin: 0 0 0 0;
+}
+header nav ul li a{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .8em;
+    transition: color .2s linear;
+}
+header nav ul li:hover > a{
+    color:  #06060a;
+}
+header nav ul li:hover >  .line1{
+    opacity: 1!important;
+}
+.active {
+    color:  #06060a;
+}
+.active__line{
+    opacity: 1;
+}
+header section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    font: 300 3em Roboto;
+    text-transform: uppercase;
+    color: #fff;
+    background: black;
+    padding: 7px 12px;
+    letter-spacing: 5px;
+    white-space: nowrap;
+}
+h2{
+    font: 300 1.1em Roboto;
+    text-align: center;
+    margin: 36px 0 0 0;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    color: #000;
+}
+main{
+    background: #fafafa;
+    padding: 0 0 70px 0;
+    box-shadow: 0 2px 10px #e4e4e4 ;
+}
+main nav{
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    text-align: center;
+    padding: 15px 0;
+}
+main nav ul li{
+    display: inline-block;
+}
+main nav ul li a{
+    font: 700 .8em Roboto;
+    text-transform: uppercase;
+    margin: 0 19px;
+    transition: color .2s linear;
+}
+main nav ul li a:hover{
+    color:  #06060a;
+}
+main nav ul li  span{
+    font-size: 2em; 
+    color: #e1e1e1;
+}
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 250px 250px ; 
+    grid-gap: 10px;
+    margin: 30px 0 0 0 ;
+}
+#gallery img{width: 100%; height: 100%; object-fit: cover;}
+#img10{grid-area:4/2/5/3 ;}
+
+
+#gallery div {
+    position: relative;
+    background: black;
+}
+.link__photo{
+   position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px; 
+  
+}
+
+#gallery div img{
+    position: absolute;
+    left: 0;
+    transition: opacity .2s linear;
+}
+
+#gallery div img:hover{
+    opacity: .5;
+}
+.link__photo{
+    color: rgb(220, 215, 215);
+}
+h3{
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+h3 > a{
+    font: 700 .9em Roboto;
+    padding: 10px 25px;
+    background: #959595;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #9595;
+    border-radius: 3px;
+    transition: background .2s linear, color .2s linear;
+}
+h3 a:hover{
+    background: #fff;
+    color: #959595;
+}
+footer{
+    padding: 64px 0 30px 0 ;
+    text-align: center;
+}
+footer img{
+    height: 40px;
+}
+footer section > div{
+    margin: 44px 0 36px 0;
+    border-top: 1px solid #9595;
+    border-bottom: 1px solid #9595;
+    padding: 20px 0;
+}
+footer section > div a:first-child{
+    margin: 0;
+}
+footer section > div a{
+    display: inline-block;
+    margin: 0 0 0 60px;
+    font-size: 20px;
+    border: 1px  solid transparent;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background .2s linear, border .2s linear, color .2s linear;
+}
+footer section > div a:hover{
+    color: #fff;
+    text-shadow: 0 3px 10px #959595; 
+    border: 1px solid #959595;
+    background: #cacaca;
+}
+footer h6{
+    font: 400 .9em Roboto;
+}
+footer h6 span{
+    color: #000;
+}
+@media only screen and (max-width:700px){
+    header > section{
+        left: 20px;
+        right: 20px;
+        transform: translate(0,-50%);
+
+    }
+    header nav ul{
+        margin: 0 20px 0 0 ;
+    }
+    header nav ul li{
+        display: block;
+        margin: 0 0 10px 0;
+    }
+    header nav ul li{
+        font-size: 1.2em;
+        
+    }
+    h1{
+        font-size: 1.5em;
+        text-align: center;
+        letter-spacing: 3px;
+        white-space: normal;
+        
+    }
+    #gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh ; 
+        grid-row-gap: 15px;
+        grid-column-gap: 0;
+        margin: 30px 0 0 0 ;
+    }
+    #gallery div{background: none;}
+    .link__photo{display: none;}
+    footer section > div a{margin: 0;}
+    #img10{grid-area:auto;}
+}
